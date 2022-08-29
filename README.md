@@ -31,5 +31,5 @@
 - 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
 - 使用しない場合は、使用素材の項目をREADMEから削除してください。
 
-##実装機能リスト
+## 実装機能リスト
 https://docs.google.com/spreadsheets/d/1OiJFkXsnfXO9HSH0VNDpHuECVqNd2LZ_T4OUFOMfZQg/edit?usp=sharing
