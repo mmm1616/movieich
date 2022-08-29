@@ -1,24 +1,30 @@
-# README
+# <movieich>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+### サイトテーマ
+<シチュエーション×おうち映画で、おうち時間が増える中で、今の気分に合った映画を探せたり、自分のおすすめしたい映画を投稿できるレビューサイト>
 
-Things you may want to cover:
+### テーマを選んだ理由
+<朝にも映画を観るほど映画が好きで、自分が検索をするときに「今どんな気分か」「どんな状況か」で探すのですが、大体はジャンルで区切られていて、
+いまいちしっくりくる映画にすぐ出会えません。シチュエーション別で分ければ、探すのも楽しいし、そこに分類されているだけでどんな映画なのか
+わかりやすいと考えて、選びました。>
 
-* Ruby version
+### ターゲットユーザ
+<・おうちで楽しめる映画を探している人>
 
-* System dependencies
+### 主な利用シーン
+<・自宅>
 
-* Configuration
+## 設計書
+<...>
 
-* Database creation
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
