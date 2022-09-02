@@ -8,17 +8,19 @@ Rails.application.routes.draw do
   sessions: 'public/sessions',
   passwords: 'public/passwords'
 }
-　devise_scope :user do
-    post 'users/guest_sign_in', to: 'users/sessions#guest_sign_in'
+
+  devise_scope :user do
+    post 'users/guest_sign_in', to: 'public/sessions#guest_sign_in'
   end
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   scope module: 'public' do
-   root to: "homes#top"
    get '/about', to: "homes#about"
   end
   
   scope module: 'public' do
-   resources :posts, only: [:index, :show, :edit, :update, :create, :destroy]
+   root to: "posts#index"
+   resources :posts
   end
   
   scope module: 'public' do
