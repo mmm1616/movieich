@@ -5,10 +5,14 @@ class Admin::UsersController < ApplicationController
     @users = User.find(params[:id])
   end
   
+  def show
+    @user = User.find(params[:id])
+  end
+  
   
   private
   
   def user_params
-    params.require(:user).permit(:name,:user_name,:introduction,:is_deleted)
+    params.require(:user).permit(:name, :kana_name, :user_name,:introduction,:is_deleted)
   end
 end
