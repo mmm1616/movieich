@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2022_09_04_005153) do
   end
 
   create_table "situations", force: :cascade do |t|
-    t.string "situation", null: false
+    t.string "situation_type", null: false
     t.integer "follower_id", null: false
     t.integer "following_id", null: false
     t.datetime "created_at", precision: 6, null: false

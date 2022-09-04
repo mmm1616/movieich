@@ -1,0 +1,19 @@
+
+
+<%= form_with model: @situation, url: admin_situations_path, method: :post do |f| %>
+ シチュエーション
+  <%= f.text_field :situation %>
+
+  <%= f.submit '追加する', class: 'btn btn-success' %>
+
+<% end %>
+
+
+                    シチュエーション
+             
+            <% @situations.each do |situation| %>
+    
+            <%= situation.situation_type %>
+            <%= link_to "編集する", edit_admin_situation_path(situation.id), class:"btn btn-success" %>
+     
+            <% end %>
