@@ -1,8 +1,3 @@
-<div class="container">
-<div class="col-3 mt-5 mb-5 secondary text-center">
-<h2>注文履歴一覧</h2>
-</div>
-</div>
 
 <div class="container">
 <table class="table col-10 mx-auto">
@@ -15,14 +10,12 @@
         </tr>
     </thead>
     <tbody>
-    <% @posts.each do |post| %>
+    <% @post_movies.each do |post_movie| %>
         <tr>
-            <td><%= link_to "#{post.created_at.strftime('%Y/%m/%d %H:%M:%S')}", admin_post_path(user.id), class: "text" %></td>
-            <td><%= post.user.last_name %></td>
-            <td><% order.order_details.each do |order_detail| %>
-                <%= order_detail.amount %>
-                <% end %></td>
-            <td><%= order.status_i18n %></td>
+            <td><%= link_to "#{post_movie.created_at.strftime('%Y/%m/%d %H:%M:%S')}", admin_post_movie_path(post_movie.id), class: "text" %></td>
+            <td><%= post_movie.user.name %></td>
+            <td><%= post_movie.title %></td>
+            <td><%= link_to "削除する", admin_post_movie_path(post_movie.id), method: :delete, class: "btn btn-danger btn-sm" %></td>
         </tr>
     </tbody>
     <% end %>
