@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   end
   
   scope module: 'public' do
-   root to: "posts#index"
-   resources :posts
+   root to: "post_movies#index"
+   resources :post_movies
   end
   
   scope module: 'public' do
@@ -50,7 +50,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    resources :posts, only: [:index, :show, :destroy]
+    resources :post_movies, only: [:index, :show, :destroy]
   end
   
   namespace :admin do
