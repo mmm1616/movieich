@@ -1,6 +1,6 @@
 class Admin::PostMoviesController < ApplicationController
     def index
-        
+        @users = User.all
     end
     
     def show
