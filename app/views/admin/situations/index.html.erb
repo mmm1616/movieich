@@ -9,11 +9,9 @@
 <% end %>
 
 
-                    シチュエーション
-             
-            <% @situations.each do |situation| %>
-    
-            <%= situation.situation_type %>
-            <%= link_to "編集する", edit_admin_situation_path(situation.id), class:"btn btn-success" %>
+シチュエーション
+<% @situations.each do |situation| %>
+<%= situation.situation_type %>
+<%= link_to "編集する", edit_admin_situation_path(situation.id), class:"btn btn-success" %>
      
-            <% end %>
+<% end %>
