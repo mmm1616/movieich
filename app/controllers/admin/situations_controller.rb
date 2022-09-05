@@ -29,7 +29,7 @@ class Admin::SituationsController < ApplicationController
  private
   
  def genre_params
-    params.require(:situation).permit(:name)
+    params.require(:situation).permit(:situation_type)
  end
  
 end
