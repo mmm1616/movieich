@@ -1,12 +1,15 @@
 class Admin::SituationsController < ApplicationController
-    
+ def new
+  @situation = Situation.new
+ end
+ 
  def index
   @situations = Situation.all
   @situation = Situation.new
  end
  
  def create
-  @situation = Situation.new(situation_params)
+  @situation = Situation.create!(situation_params)
   @situation.save
   redirect_to admin_situations_path
  end
@@ -28,8 +31,8 @@ class Admin::SituationsController < ApplicationController
  
  private
   
- def genre_params
-    params.require(:situation).permit(:situation_type)
+ def situation_params
+    params.require(:situation).permit(:name)
  end
  
 end

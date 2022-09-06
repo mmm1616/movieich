@@ -18,4 +18,16 @@ class Public::PostMoviesController < ApplicationController
     @post_comments = post_movie.post_comments.all
     @user = current_user
    end
+   
+   def create
+    @situations = Situation.all
+    @post_movie = PostMovie.new(post_movie_params)
+    @post_movie.save
+    redirect_to post_movie_path(@post_movie.id)
+   end
+   
+   def post_movie_params
+      params.require(:post_movie).permit(:title, :story, :review, :star, :site)
+   end
+   
 end

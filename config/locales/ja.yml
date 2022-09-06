@@ -1,0 +1,13 @@
+ ja:
+  enums:
+    post_movie:
+      site:
+        netflix: "Netflix"
+        amazon: "Amazonプライム・ビデオ"
+        une: "U-NEXT"
+        hulu: "Hulu"
+        dvd: "レンタルビデオ"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"

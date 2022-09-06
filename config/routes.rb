@@ -54,7 +54,7 @@ Rails.application.routes.draw do
   end
   
   namespace :admin do
-    resources :situations, only: [:index, :edit, :update, :create]
+    resources :situations, only: [:new, :index, :edit, :update, :create]
   end
 
   namespace :admin do
