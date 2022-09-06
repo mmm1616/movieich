@@ -7,6 +7,8 @@ class User < ApplicationRecord
   has_many :post_movies, dependent: :destroy
   has_many :favorites, dependent: :destroy
   has_many :post_comments, dependent: :destroy
+  
+  has_one_attached :profile_image
          
   def self.guest
     find_or_create_by!(email: 'guest@example.com') do |user|
