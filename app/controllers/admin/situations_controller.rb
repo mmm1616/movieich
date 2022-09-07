@@ -9,7 +9,7 @@ class Admin::SituationsController < ApplicationController
  end
  
  def create
-  @situation = Situation.create!(situation_params)
+  @situation = Situation.new(situation_params)
   @situation.save
   redirect_to admin_situations_path
  end
