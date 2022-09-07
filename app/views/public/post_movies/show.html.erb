@@ -8,6 +8,9 @@
 
 <%= link_to "編集する", edit_post_movie_path(@post_movie.id) %>
 
+<div id = "favorite_<%= @post_movie.id %>">
+  <%= render partial: "favorites/favorite", locals: { post_movie: @post_movie } %>
+</div>
 
 <% @post_movie.post_comments.each do |post_comment| %>
 <%= post_comment.user_name %>
